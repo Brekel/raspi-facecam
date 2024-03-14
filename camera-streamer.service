@@ -7,7 +7,7 @@ ConditionPathExists=/sys/bus/i2c/drivers/imx708/10-001a/video4linux
 ExecStart=/usr/bin/camera-streamer \
  --camera-path=/base/soc/i2c0mux/i2c@1/imx708@1a --camera-type=libcamera \
  --camera-format=YUYV --camera-width=864 --camera-height=480 --camera-fps=60 \
- --camera-options=AfMode=0 -camera-options=LensPosition=0 \
+ --camera-options=AfMode=0 -camera-options=LensPosition=11 \
  --camera-nbufs=5 \
  --camera-stream.height=480 \
  --camera-stream.options=compression_quality=70 \

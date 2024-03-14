@@ -15,6 +15,7 @@ This is designed to be used with a 3D printed case that can be downloaded from t
 
 
 ## Installation
+(you can find a more step-by step guide in PDF form in the documentation folder)
 
 * Use the Raspberry Pi Imager to install the 64-bit Lite version of Raspberry Pi OS
 * Make sure to configure your WiFi settings using the "Edit Settings" option and enable SSH
@@ -26,11 +27,10 @@ This is designed to be used with a 3D printed case that can be downloaded from t
 sudo apt install git
 ```
 
-### run the following commands to download and install the software:
+### run the following commands to download &amp; install the software (or if you want to update things in the future)
 ```bash
 git clone https://github.com/Brekel/raspi-facecam.git
 cd raspi-facecam
-chmod +x install_camera-streamer.sh
 ./install_camera-streamer.sh
 ```
 

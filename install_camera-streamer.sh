@@ -1,9 +1,6 @@
 #!/bin/bash
 
-# cleanup previous
-rm camera-streamer-*
-rm brekel_*
-rm *.service
+# stop if services are already running
 sudo systemctl stop camera-streamer
 sudo systemctl stop brekel_LED
 sudo systemctl disable camera-streamer
