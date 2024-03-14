@@ -1,10 +1,10 @@
 [Unit]
 Description=ring LED lights
 After=multi-user.target
-ConditionPathExists=/home/pi/brekel_LED.py
+ConditionPathExists=/home/pi/raspi-facecam/brekel_LED.py
 
 [Service]
-ExecStart=python /home/pi/brekel_LED.py
+ExecStart=python /home/pi/raspi-facecam/brekel_LED.py
 Restart=no
 
 [Install]
