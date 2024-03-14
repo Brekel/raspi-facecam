@@ -22,7 +22,7 @@ This is designed to be used with a 3D printed case that can be downloaded from t
 * Once completed you can insert the SD-Card into the Pi through the side hole, you may need a small screw driver or tweezers to carefully slide it into place (this was deliberately designed so it takes some effort to remove)
 * SSH into your Pi
 
-### run the following commands to make sure git is available
+### run the following commands to make sure git is available (only needed once on initial installation)
 ```bash
 sudo apt install git
 ```
@@ -36,3 +36,18 @@ cd raspi-facecam
 
 Installation can take 5-10 minutes (depending on your SD-card and internet speed)
 When finished you can access the video stream over the listed http listed in the console.
+
+
+## Update
+When you want to update to the latest version
+* SSH into your Pi
+* use the following command to remove the current files:
+```bash
+rm -rf raspi-facecam
+```
+* clone the github repo again and run the installation script again
+```bash
+git clone https://github.com/Brekel/raspi-facecam.git
+cd raspi-facecam
+./install_camera-streamer.sh
+```
