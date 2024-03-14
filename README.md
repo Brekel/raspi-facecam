@@ -15,14 +15,24 @@ This is designed to be used with a 3D printed case that can be downloaded from t
 
 
 ## Installation
+
 * Use the Raspberry Pi Imager to install the 64-bit Lite version of Raspberry Pi OS
 * Make sure to configure your WiFi settings using the "Edit Settings" option and enable SSH
 * Once completed you can insert the SD-Card into the Pi through the side hole, you may need a small screw driver or tweezers to carefully slide it into place (this was deliberately designed so it takes some effort to remove)
-* SSH into your Pi and run the following commands to download and install the software:
+* SSH into your Pi
+
+### run the following commands to make sure git is available
+```bash
+sudo apt install git
+```
+
+### run the following commands to download and install the software:
 ```bash
 git clone https://github.com/Brekel/raspi-facecam.git
 cd raspi-facecam
 chmod +x install_camera-streamer.sh
 ./install_camera-streamer.sh
 ```
-  
+
+Installation can take 5-10 minutes (depending on your SD-card and internet speed)
+When finished you can access the video stream over the listed http s listed in the console.
