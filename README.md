@@ -7,8 +7,8 @@ The primary use case is as a wireless HMC (Helmet Mounted Camera) for facial mot
 For example the [Brekel Body v3 software](https://brekel.com/brekel-body-v3) can utilize this with it's face tracking functionality.
 
 
-This is designed to be used with a 3D printed case that can be downloaded from the following page (more info on bill of materials and assembly instructions there):
- [https://www.printables.com/model/805075-rasberry-pi-zero-face-camera](https://www.printables.com/model/805075-rasberry-pi-zero-face-camera)
+This is designed to be used with a 3D printed case that can be downloaded from the following page(s) (more info on bill of materials and assembly instructions there):
+ [Printables](https://www.printables.com/model/805075-rasberry-pi-zero-face-camera)
 ![exploded_case](images/exploded_case.png)
 ![bill of materials](images/BOM.png)
 
@@ -35,4 +35,4 @@ cd raspi-facecam
 ```
 
 Installation can take 5-10 minutes (depending on your SD-card and internet speed)
-When finished you can access the video stream over the listed http s listed in the console.
+When finished you can access the video stream over the listed http listed in the console.
