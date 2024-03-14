@@ -1,0 +1,11 @@
+[Unit]
+Description=ring LED lights
+After=multi-user.target
+ConditionPathExists=/home/pi/brekel_LED.py
+
+[Service]
+ExecStart=python /home/pi/brekel_LED.py
+Restart=no
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,28 @@
+[Unit]
+Description=brekel raspiCam for Camera Module 3 12MP Wide
+After=network.target
+ConditionPathExists=/sys/bus/i2c/drivers/imx708/10-001a/video4linux
+
+[Service]
+ExecStart=/usr/bin/camera-streamer \
+ --camera-path=/base/soc/i2c0mux/i2c@1/imx708@1a --camera-type=libcamera \
+ --camera-format=YUYV --camera-width=864 --camera-height=480 --camera-fps=60 \
+ --camera-options=AfMode=0 -camera-options=LensPosition=0 \
+ --camera-nbufs=5 \
+ --camera-stream.height=480 \
+ --camera-stream.options=compression_quality=70 \
+ --http-listen=0.0.0.0 --http-port=8080
+
+DynamicUser=yes
+SupplementaryGroups=video i2c
+Restart=always
+RestartSec=10
+Nice=10
+IOSchedulingClass=idle
+IOSchedulingPriority=7
+CPUWeight=100
+AllowedCPUs=1-4
+MemoryMax=250M
+
+[Install]
+WantedBy=multi-user.target
