@@ -24,7 +24,7 @@ This is designed to be used with a 3D printed case that can be downloaded from t
 
 ### run the following commands to make sure git is available (only needed once on initial installation)
 ```bash
-sudo apt install git
+sudo apt install -y git
 ```
 
 ### run the following commands to download &amp; install the software (or if you want to update things in the future)
