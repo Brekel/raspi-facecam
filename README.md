@@ -9,6 +9,7 @@ For example the [Brekel Body v3 software](https://brekel.com/brekel-body-v3) can
 
 This is designed to be used with a 3D printed case that can be downloaded from the following page(s) (more info on bill of materials and assembly instructions there):  
  [Printables](https://www.printables.com/model/805075-rasberry-pi-zero-face-camera)
+ [MakerWorld](https://makerworld.com/en/models/387990)
  ![exploded_case](images/exploded_case.png)
 ![bill of materials](images/BOM.png)
 
