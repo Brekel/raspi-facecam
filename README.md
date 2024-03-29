@@ -16,7 +16,7 @@ This is designed to be used with a 3D printed case that can be downloaded from t
 
 
 ## Installation
-(you can find a more step-by step guide in PDF form in the documentation folder)
+(you can find a more step-by step guide in the PDF from the documentation folder)
 
 * Use the Raspberry Pi Imager to install the 64-bit Lite version of Raspberry Pi OS
 * Make sure to configure your WiFi settings using the "Edit Settings" option and enable SSH
@@ -46,9 +46,22 @@ When you want to update to the latest version
 ```bash
 rm -rf raspi-facecam
 ```
-* clone the github repo again and run the installation script again
+* clone the github repo again and run the installation script again (same as above for initial install)
 ```bash
 git clone https://github.com/Brekel/raspi-facecam.git
 cd raspi-facecam
 ./install_camera-streamer.sh
 ```
+
+## HMC (Helmet Mounted Camera) mounting solution
+
+The 3D printed case can be attached to a helmet using standard GoPro mounting hardware like this:
+![HMC GoPro](images/HMC_GoPro.jpg)
+
+Another, more sophisticated option is to to attach it using some additional 3D prints and a carbon rod:
+![HMC1](images/HMC.jpg)
+The advantage of this solution is that it’s fully adjustable, it can be adjusted by pivoting on two axis and the distance of the camera to the face can be adjusted as well.
+
+3D printable files can be found here:  
+[Printables](https://www.printables.com/model/823454-hmc-helmet-mounted-camera-mounting-solution)  
+[MakerWorld](https://makerworld.com/en/models/400309)
